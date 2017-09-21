@@ -40,14 +40,6 @@ class Blockchain
     @formatter.from_wei(wei_amount)
   end
 
-  def mint(address)
-    response = RestClient.post('http://ropsten-mint.dev:3100/mint', { address: address })
-    if response.code == 200
-      response_json = JSON.parse(response.body)
-      response_json['tx'] if response_json['success']
-    end
-  end
-
   def accounts
     count = @contract_instance.call.num_members
     to = count
