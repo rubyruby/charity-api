@@ -1,6 +1,6 @@
 GIT
-  remote: https://github.com/EthWorks/ethereum.rb.git
-  revision: 6a921f96dfc1515c612056f098dba64de2543872
+  remote: https://github.com/rubyruby/ethereum.rb.git
+  revision: fe8c1d53398d75dc7886e38e23bccfcdb64f126c
   specs:
     ethereum.rb (2.1.7)
       activesupport (~> 5.0)
