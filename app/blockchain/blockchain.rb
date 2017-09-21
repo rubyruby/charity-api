@@ -105,8 +105,8 @@ class Blockchain
       gas = tx['gas'].to_i(16)
 
       {
-        succeeded: tx_receipt && block_number && gas_used < gas,
-        failed: tx_receipt && block_number && gas_used == gas
+        succeeded: block_number && gas_used < gas,
+        failed: block_number && gas_used == gas
       }
     else
       {
