@@ -16,7 +16,6 @@ gem 'rack-cors'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'active_model_serializers'
-gem 'rest-client'
 
 gem 'ethereum.rb', github: 'rubyruby/ethereum.rb'
 gem 'eth'
