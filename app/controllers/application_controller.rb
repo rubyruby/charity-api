@@ -1,6 +1,10 @@
 class ApplicationController < ActionController::API
   include ActionController::HttpAuthentication::Token::ControllerMethods
 
+  def ping
+    render json: { success: true }
+  end
+
   def contract_balance
     balance = Blockchain.new.contract_balance
 

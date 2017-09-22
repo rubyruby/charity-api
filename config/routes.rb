@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   scope :api do
+    get :ping, to: 'application#ping'
     get :contract_balance, to: 'application#contract_balance'
     get :user_info, to: 'application#user_info'
 
