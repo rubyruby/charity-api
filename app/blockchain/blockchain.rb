@@ -108,10 +108,6 @@ class Blockchain
         succeeded: block_number && gas_used < gas,
         failed: block_number && gas_used == gas
       }
-    else
-      {
-        inProgress: true
-      }
     end
   end
 
