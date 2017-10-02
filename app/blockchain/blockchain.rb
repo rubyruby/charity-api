@@ -1,4 +1,5 @@
 class Blockchain
+  GAS_PRICE = 101000000000
   ACCOUNTS_LIMIT = 100
   PROPOSALS_LIMIT = 100
 
@@ -12,6 +13,7 @@ class Blockchain
     contract_abi = contract_json['abi']
 
     @contract_instance = Ethereum::Contract.create(name: "Charity", address: contract_address, abi: contract_abi)
+    @contract_instance.gas_price = GAS_PRICE
   end
 
   def self.new_account
