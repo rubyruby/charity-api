@@ -13,7 +13,7 @@ class Blockchain
     contract_address = contract_json['address']
     contract_abi = contract_json['abi']
 
-    @contract_instance = Ethereum::Contract.create(name: "Charity", address: contract_address, abi: contract_abi)
+    @contract_instance = Ethereum::Contract.create(name: "Charity", address: contract_address, abi: contract_abi, client: @client)
     @contract_instance.gas_price = GAS_PRICE
     @contract_instance.gas_limit = GAS_LIMIT
   end
