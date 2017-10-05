@@ -5,7 +5,7 @@ class Blockchain
   PROPOSALS_LIMIT = 100
 
   def initialize
-    @client = Ethereum::IpcClient.new
+    @client = Ethereum::IpcClient.new('~/.ethereum/testnet/geth.ipc', false)
     @formatter = Ethereum::Formatter.new
 
     contract_json = JSON.parse(File.read('app/blockchain/contracts/charity.json'))
