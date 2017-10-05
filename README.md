@@ -2,6 +2,8 @@
 
 CharityAPI is a Ruby on Rails API project that provides data from the Ethereum blockchain for [Charity frontend application](https://github.com/rubyruby/charity).
 
+Description in Russian: [https://habrahabr.ru/post/339080/](https://habrahabr.ru/post/339080/)
+
 ### Local Dev Setup
 
 Install [Ruby](https://www.ruby-lang.org/en/documentation/) language version 2.2.2 or newer.
